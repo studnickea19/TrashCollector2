@@ -1,0 +1,58 @@
+﻿@model TrashCollector2.Models.Pickup
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pickup</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerAddress.CustomerAddressID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerAddress.CustomerAddressID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PickUpArea.AreaID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PickUpArea.AreaID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PickUpDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PickUpDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PickupCompleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PickupCompleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PickupSuspended)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PickupSuspended)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PickupID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
