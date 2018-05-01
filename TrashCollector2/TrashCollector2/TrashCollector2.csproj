@@ -205,6 +205,8 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PickUpAreasController.cs" />
     <Compile Include="Controllers\PickupsController.cs" />
+    <Compile Include="Controllers\RoleController.cs" />
+    <Compile Include="Controllers\userscontroller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -215,6 +217,10 @@
     <Compile Include="Migrations\201805011315546_AddedFullAddressToAddressController.cs" />
     <Compile Include="Migrations\201805011315546_AddedFullAddressToAddressController.Designer.cs">
       <DependentUpon>201805011315546_AddedFullAddressToAddressController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805011951189_GotRolesFiguredOut.cs" />
+    <Compile Include="Migrations\201805011951189_GotRolesFiguredOut.Designer.cs">
+      <DependentUpon>201805011951189_GotRolesFiguredOut.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -325,6 +331,10 @@
     <Content Include="Views\PickUpAreas\Details.cshtml" />
     <Content Include="Views\PickUpAreas\Edit.cshtml" />
     <Content Include="Views\PickUpAreas\Index.cshtml" />
+    <Content Include="Views\Shared\_NavBar.cshtml" />
+    <Content Include="Views\userscontroller\Index.cshtml" />
+    <Content Include="Views\Role\Role.cshtml" />
+    <Content Include="Views\RoleIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -343,6 +353,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805011315546_AddedFullAddressToAddressController.resx">
       <DependentUpon>201805011315546_AddedFullAddressToAddressController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805011951189_GotRolesFiguredOut.resx">
+      <DependentUpon>201805011951189_GotRolesFiguredOut.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
