@@ -1,0 +1,45 @@
+﻿@model IEnumerable<TrashCollector2.Models.Charge>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Customer.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pickup.PickupID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChargeAmount)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Customer.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pickup.PickupID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChargeAmount)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ChargeID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ChargeID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ChargeID })
+        </td>
+    </tr>
+}
+
+</table>
