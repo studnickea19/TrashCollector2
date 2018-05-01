@@ -1,12 +1,22 @@
-﻿body {
+﻿
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #D4EFDF  ;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+}
+.jumbotron{
+    background-color: #EBF5FB;
+}
+.navbar{
+    background-color: #283747;
+    text-decoration-color: #000000;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 

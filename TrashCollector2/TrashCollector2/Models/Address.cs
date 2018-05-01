@@ -24,5 +24,13 @@ namespace TrashCollector2.Models
         [Display(Name = "Zipcode")]
         public int ZipCode { get; set; }
         
+        [Display(Name ="Address")]
+        public string FullAddress
+        {
+            get
+            {
+                return StreetAddress + " " + City + ", " + State + " " + ZipCode;
+            }
+        }
     }
 }
